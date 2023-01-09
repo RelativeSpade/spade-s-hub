@@ -1,0 +1,489 @@
+--variable
+getgenv().toggle = false;
+getgenv().AC = false;
+getgenv().AH = false;
+getgenv().UI = false;
+
+
+
+--functions
+function allCodes()
+
+local args = {
+    [1] = "15KLIKESTHANKYOU"
+}
+
+game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+
+local args = {
+    [1] = "update2"
+}
+
+game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+
+local args = {
+    [1] = "update1"
+}
+
+game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+
+local args = {
+    [1] = "release"
+}
+
+game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+
+local args = {
+    [1] = "testing"
+}
+
+game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+
+end
+function WinterAutoClick()
+	while getgenv().WAC == true do
+		local args = {
+			[1] = "Events"
+		}
+
+game:GetService("ReplicatedStorage").Events.Tap:FireServer(unpack(args))
+wait(0.000000000000000000000000000000000000000001)
+end
+end
+function AutoClick()
+    while getgenv().AC == true do
+        local args = {
+        [1] = "Main"
+    }
+
+game:GetService("ReplicatedStorage").Events.Tap:FireServer(unpack(args))
+wait(0.000000000000000000000000000000000000000001)
+
+end
+end
+function AutoHatch()
+	while getgenv().AH == true do
+		local args = {
+			[1] = {},
+			[2] = getgenv().petType,
+			[3] = 1
+		}
+
+		game:GetService("ReplicatedStorage").Events.HatchEgg:InvokeServer(unpack(args))
+
+	end		
+end
+function AutoRebirth()
+	while getgenv().AR == true do
+	local args = {
+    	[1] = getgenv().rebirthAmount
+	}
+
+		game:GetService("ReplicatedStorage").Events.Rebirth:FireServer(unpack(args))
+		wait(000000000000000000000000000000000000000001)
+	end
+end
+function ForestTP()
+local args = {
+    [1] = CFrame.new(-163.98446655273438, 987.5964965820312, -403.33941650390625) * CFrame.Angles(-0, 0, -0)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+end
+function Spawn()
+
+	local args = {
+		[1] = CFrame.new(-287.41912841796875, 23.28148651123047, -384.177734375) * CFrame.Angles(-0, -1.3962873220443726, -0)
+	}
+
+	game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+end
+
+function FlowerTP()
+
+	local args = {
+		[1] = CFrame.new(-179.51564025878906, 1524.6309814453125, -682.4987182617188) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
+	}
+
+	game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+
+function SwampTP()
+
+	local args = {
+		[1] = CFrame.new(-264.35888671875, 2123.06298828125, -694.6613159179688) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
+	}
+
+	game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+
+function SnowTP()
+
+	local args = {
+		[1] = CFrame.new(-201.77197265625, 2944.481689453125, -470.40875244140625) * CFrame.Angles(0, 1.5707963705062866, 0)
+	}
+
+	game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function DesertTP()
+
+	local args = {
+		[1] = CFrame.new(-166.28515625, 4235.38916015625, -779.1531372070312) * CFrame.Angles(0, 1.5707963705062866, 0)
+	}
+
+	game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function WinterEventTP()
+
+	local args = {
+		[1] = CFrame.new(-2951.70263671875, 149.202392578125, -5468.14453125) * CFrame.Angles(-0, 0, -0)
+	}
+
+	game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function DeathTP()
+
+	local args = {
+		[1] = CFrame.new(-276.2012634277344, 5425.62158203125, -480.28778076171875) * CFrame.Angles(0, 1.5707963705062866, 0)
+	}
+
+	game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function BeachTP()
+
+local args = {
+    [1] = CFrame.new(-140.3450927734375, 6881.630859375, -495.68212890625) * CFrame.Angles(0, 1.5707963705062866, 0)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function MinesTP()
+
+local args = {
+    [1] = CFrame.new(-243.2586669921875, 8376.5166015625, -483.8897705078125) * CFrame.Angles(0, 1.5707963705062866, 0)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function CloudTP()
+
+local args = {
+    [1] = CFrame.new(-253.30348205566406, 11262.8818359375, -237.8885955810547) * CFrame.Angles(0, 1.5707963705062866, 0)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function CoralTP()
+
+local args = {
+    [1] = CFrame.new(-511.0211181640625, 13812.0322265625, -543.2418212890625) * CFrame.Angles(-0, -1.5707963705062866, 0)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function DarkHeartTP()
+
+local args = {
+    [1] = CFrame.new(-408.697509765625, 17180.138671875, -552.0464477539062) * CFrame.Angles(0, 1.5707963705062866, 0)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function FlameLandsTP()
+
+local args = {
+    [1] = CFrame.new(1137.614013671875, 170.30052185058594, -2859.725341796875) * CFrame.Angles(-0, -1.5707963705062866, 0)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function MoltenTP()
+	
+
+local args = {
+    [1] = CFrame.new(1280.5958251953125, 2193.828125, -2885.144287109375) * CFrame.Angles(0, 1.5707963705062866, 0)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function BMagmaTP()
+
+local args = {
+    [1] = CFrame.new(1401.12939453125, 5240.41943359375, -2953.919677734375) * CFrame.Angles(0, 1.5707963705062866, 0)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function PMagmaTP()
+
+local args = {
+    [1] = CFrame.new(1319.7027587890625, 7662.02490234375, -2958.0576171875) * CFrame.Angles(0, 1.5707963705062866, 0)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function YMagmaTP()
+
+local args = {
+    [1] = CFrame.new(1403.5440673828125, 10404.09765625, -2903.138427734375) * CFrame.Angles(-3.1415927410125732, 0.7853636741638184, -3.1415927410125732)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function RMagmaTP()
+
+local args = {
+    [1] = CFrame.new(1426.2127685546875, 13353.703125, -2900.90087890625) * CFrame.Angles(-3.1415927410125732, 0.7853636741638184, -3.1415927410125732)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function FantasyTP()
+
+local args = {
+    [1] = CFrame.new(1415.12451171875, 169.6440887451172, -5604.470703125) * CFrame.Angles(0, 1.5707963705062866, 0)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+function IceTP()
+	-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = CFrame.new(-2960.648681640625, 2811.834228515625, -5700.671875) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
+}
+
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+
+end
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Spade's Hub | Tapping Simulator! 🐾", HidePremium = false,IntroText = "Spade's Hub", SaveConfig = true, ConfigFolder = "Spades"})
+
+--Tab(s)
+local FarmTab = Window:MakeTab({
+	Name = "Farming",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local PetTab = Window:MakeTab({
+	Name = "Pet(s)",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local TPTab = Window:MakeTab({
+	Name = "Teleport",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local CreditsTab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--toggle
+FarmTab:AddButton({
+	Name = "Redeem Codes",
+	Callback = function()
+    	allCodes()
+	end
+})
+FarmTab:AddToggle({
+	Name = "Events AutoClick!",
+	Default = false,
+	Callback = function(Value)
+		getgenv().WAC = Value;
+        WinterAutoClick()
+	end    
+})
+FarmTab:AddToggle({
+	Name = "AutoClick!",
+	Default = false,
+	Callback = function(Value)
+		getgenv().AC = Value;
+        AutoClick()
+	end    
+})
+FarmTab:AddDropdown({
+	Name = "Rebirth Amount",
+	Default = "1",
+	Options = {"1", "5","10","20","100","500","4000","13500","32000","62500","108000","171500","256000","364500","500000","1000000"},
+	Callback = function(Value)
+		print(Value)
+		getgenv().rebirthAmount = Value;
+	end    
+})
+
+FarmTab:AddToggle({
+	Name = "AutoRebirth!",
+	Default = false,
+	Callback = function(Value)
+		getgenv().AR = Value;
+        AutoRebirth()
+	end    
+})
+
+PetTab:AddDropdown({
+	Name = "Egg",
+	Default = "Starter",
+	Options = {"Starter","Coral Egg", "Jungle Egg","Bee Egg","Swamp Egg","Snow Egg","Desert Egg","Death Egg","Forest Egg","Wood Egg","Mine Egg","Beach Egg","Dark Egg","Cloud Egg","Magma Egg","Fire Egg","Molten Egg","Underworld Egg","Blue Magma Egg","Red Magma Egg","Secret Magma Egg","Purple Magma Egg","Yellow Magma Egg","Halloween Egg","Candy Egg","Flora Egg","Holy Wood Egg","Holy Bee Egg","Holy Egg","Castle Egg","Asteroid Egg","Festival Egg","Japan Egg","Station Egg","Robo Egg","Alien Egg","Frost Alien Egg","Toxic Alien Egg","Winter Beast Egg","Orange Egg","Hallow Egg","Spooky Egg","Halloween Dominus Egg","Pumpkin Egg","Ghoul Egg","Scrapyard Egg","Shipwreck Egg","Blood Egg","Water Egg","Ultra Water Egg","Deep Ocean Egg","Water Ruins Egg","Purple Water Egg","Neon Ice Egg","Ice Egg","Winter Egg","Iced Egg","Golem Egg","Secret Night Egg","75M Egg","Candycane Egg","village Egg"},
+	Callback = function(Value)
+		print(Value)
+		getgenv().petType = Value
+	end    
+})
+PetTab:AddToggle({
+	Name = "AutoHatch!",
+	Default = false,
+	Callback = function(Value)
+		getgenv().AH = Value
+		AutoHatch()
+	end    
+})
+TPTab:AddLabel("Normal Teleport's")
+
+TPTab:AddButton({
+	Name = "Spawn",
+	Callback = function()
+    	Spawn()
+	end
+})
+TPTab:AddButton({
+	Name = "Forest",
+	Callback = function()
+    	ForestTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Flower",
+	Callback = function()
+    	FlowerTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Swamp",
+	Callback = function()
+    	SwampTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Snow",
+	Callback = function()
+    	SnowTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Desert",
+	Callback = function()
+    	DesertTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Death",
+	Callback = function()
+    	DeathTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Mines",
+	Callback = function()
+    	MinesTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Clouds",
+	Callback = function()
+    	CloudTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Coral",
+	Callback = function()
+    	CoralTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Darkheart",
+	Callback = function()
+    	DarkHeartTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Flame Lands",
+	Callback = function()
+    	FlameLandsTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Molten",
+	Callback = function()
+    	MoltenTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Blue Magma",
+	Callback = function()
+    	BMagmaTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Purple Magma",
+	Callback = function()
+    	PMagmaTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Yellow Magma",
+	Callback = function()
+    	YMagmaTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Red Magma",
+	Callback = function()
+    	RMagmaTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Fantasy",
+	Callback = function()
+    	FantasyTP()
+	end
+})
+
+
+TPTab:AddLabel("Winter Event Teleport's")
+
+TPTab:AddButton({
+	Name = "Winter Event Spawn",
+	Callback = function()
+    	WinterEventTP()
+	end
+})
+TPTab:AddButton({
+	Name = "Ice",
+	Callback = function()
+    	IceTP()
+	end
+})
+--text
+CreditsTab:AddLabel("Made by Spade#6650")
+
