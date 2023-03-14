@@ -46,7 +46,6 @@ end
 for i,v in next, game:GetService("Players").LocalPlayer.PlayerGui.UI.Rebirth.ScrollingContainer.ScrollingFrame:GetChildren() do
     if v:IsA("TextButton") then
         local RebirthUnlockeds = v:FindFirstChild("Rebirth")
-        print(RebirthUnlockeds.Text)
         if (string.find(RebirthUnlockeds.Text, "K")) then
             RebirthUnlockeds = tonumber(string.match(RebirthUnlockeds.Text, "(%d+)"))
             RebirthUnlockeds = string.format(RebirthUnlockeds*1000)
@@ -58,7 +57,6 @@ for i,v in next, game:GetService("Players").LocalPlayer.PlayerGui.UI.Rebirth.Scr
         else RebirthUnlockeds = tonumber(string.match(RebirthUnlockeds.Text, "(%d+)"))
         end
     end
-        print(RebirthUnlockeds)
         if tonumber(RebirthUnlockeds) then
             table.insert(RebirthUnlocked, RebirthUnlockeds)
         end
